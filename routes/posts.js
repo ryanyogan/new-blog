@@ -38,7 +38,7 @@ Router.route('/posts')
       if (err) return res.send(err);
       res.json(posts);
     });
-  });
+  })
 
   .post(function(req, res) {
     var post = new Post(req.body);
@@ -62,7 +62,7 @@ Router.route('/posts/:id')
         res.json({ message: 'Post updated.' });
       });
     });
-  });
+  })
 
   .get(function(req, res) {
     Post.findByOne({_id : req.params.id}).exec(function(err, post) {
