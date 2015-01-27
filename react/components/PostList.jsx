@@ -5,7 +5,7 @@
 var React      = require('react');
 var request    = require('superagent');
 var ReactAsync = require('react-async');
-var Link       = react('react-router-component').Link;
+var Link       = require('react-router-component').Link;
 
 var Post = React.createClass({
 
